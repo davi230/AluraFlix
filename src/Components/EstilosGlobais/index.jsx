@@ -7,11 +7,11 @@ const EstilosGlobais = createGlobalStyle`
   --branco: #ffffff;
   --preto: #000000;
   --azul: #2271D1;
-  --azulClaro: #6BD1FF
-  --azulOpacidade: rgba(0, 18, 51, 56%)
+  --azulClaro: #6BD1FF;
+  --azulOpacidade: rgba(0, 18, 51, 56%);
   --verde: #00C86F;
   --amarelo: #FFBA05;
-  --cinza: #262626
+  --cinza: #262626;
 }
 
 html {
