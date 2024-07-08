@@ -23,24 +23,18 @@ const FigureEstilizada = styled.figure`
     margin: 0;
 `
 
-const Thumb = () => {
     const ThumbEstilizada = styled.iframe`
         width: 600px;
         height: 333px;
         border: none;
-    `
-
-    return (
-        <ThumbEstilizada src="https://www.youtube.com/embed/c8mVlakBESE"/>
-    )
-}
+`
 
 const Banner = () => {
     return (
         <FigureEstilizada>
                 <SessaoBanner>
                     <ContainerTexto />
-                    <Thumb/>
+                    <ThumbEstilizada src="https://www.youtube.com/embed/c8mVlakBESE"/>
                 </SessaoBanner>
         </FigureEstilizada>
     )

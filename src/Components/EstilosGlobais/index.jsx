@@ -19,6 +19,13 @@ html {
   -webkit-text-size-adjust: 100%; 
   background-color: var(--cinza);
 }
+
+ol, ul, li {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   min-height: 100vh;

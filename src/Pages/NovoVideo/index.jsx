@@ -1,9 +1,8 @@
+import PaginaPadrao from "../../Components/PaginaPadrao";
+
 const NovoVideo = () => {
     return (
-        <main>
-            <h1>Olá! Vamos Add um novo videos?</h1>
-            <p>Tá loko eim? kkkkkk</p>
-        </main>
+        <PaginaPadrao></PaginaPadrao>
     )
 }
 
