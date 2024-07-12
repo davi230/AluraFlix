@@ -16,7 +16,6 @@ const ContainerBotao = styled.div`
     gap: 20px;
 `
 
-
 const Header = () => {
     return (
         <HeaderEstilizado>
@@ -26,7 +25,7 @@ const Header = () => {
                 <Botao>Home</Botao>
             </Link>
             <Link to="/NovoVideo">
-                <Botao>Novo Vídeo</Botao>
+                <Botao >Novo Vídeo</Botao>
             </Link>
             </ContainerBotao>
         </HeaderEstilizado>

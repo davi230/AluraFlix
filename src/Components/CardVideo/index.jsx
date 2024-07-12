@@ -3,11 +3,13 @@ import editar from "../../Assets/Editar.png";
 import styled from "styled-components";
 
 const CardContainer = styled.div`
-    max-width: 432px;
+    width: 432px;
     background-color: var(--preto);
     border: 5px solid ${(props) => props.cor};
+    border-radius: 20px;
     iframe {
-        max-width: 100%;
+        width: 100%;
+        border-radius: 15px 15px 0 0 ;
     }
 `;
 
@@ -24,6 +26,7 @@ const BotaoStyled = styled.button`
     gap: 8px;
     padding: 5px 20px;
     border-radius: 20px;
+    transition: all 0.3s;
     img {
         width: 25px;
     }
@@ -34,20 +37,20 @@ const BotaoStyled = styled.button`
         color: var(--branco);
     }
     &:hover {
-        box-shadow: inset 0 0 16px blue;
+        box-shadow: inset 0 0 16px ${(props) => props.cor};
     }
 `;
 
-const CardVideo = ({ cor, caminho }) => {
+const CardVideo = ({ cor, caminho, aoEditar }) => {
     return (
         <CardContainer cor={cor}>
             <iframe src={caminho} title="Video Player" />
             <ContainerBotao>
-                <BotaoStyled>
+                <BotaoStyled cor={cor}>
                     <img src={lixo} alt="apagar" />
                     <p>Apagar</p>
                 </BotaoStyled>
-                <BotaoStyled>
+                <BotaoStyled onClick={aoEditar} cor={cor}>
                     <img src={editar} alt="editar" />
                     <p>Editar</p>
                 </BotaoStyled>

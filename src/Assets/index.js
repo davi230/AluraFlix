@@ -9,7 +9,7 @@ const listaVideos = [
     {
         id: 2,
         titulo: "PERCURSO em NÍVEL em ÁRVORE BINÁRIA",
-        path: "https://www.youtube.com/embed/UOK7nS2E9xM&list=PL5TJqBvpXQv7ipm2exZbbqwpFZc-TZ80s&index=6",
+        path: "https://www.youtube.com/embed/UOK7nS2E9xM",
         descricao: "Árvores binárias são estruturas de dados hierárquicas onde cada nó possui no máximo dois filhos, denominados filho esquerdo e filho direito. Elas são usadas para representar relações hierárquicas e para facilitar operações eficientes de busca, inserção e exclusão de dados.",
         categoria: "Front End",
     },

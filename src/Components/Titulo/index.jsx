@@ -9,7 +9,6 @@ const TituloEstilizado = styled.h3`
     color: var(--branco);
     text-align: center;
     padding: 10px 0;
-    margin-left: 40px;
     border-radius: 16px;
 `
 
