@@ -5,6 +5,7 @@ const listaVideos = [
         path: "https://www.youtube.com/embed/ZY3-MFxVdEw",
         descricao: "O que é Front-end? Trabalhando na área os termos HTML, CSS e JavaScript fazem parte da rotina das desenvolvedoras e desenvolvedores. Mas o que eles fazem, afinal? Descubra com a Vanessa nesse episódio! ",
         categoria: "Front End",
+        imagem: "https://img.youtube.com/vi/Aa8gf1pwb4E/maxresdefault.jpg",
     },
     {
         id: 2,
@@ -12,6 +13,7 @@ const listaVideos = [
         path: "https://www.youtube.com/embed/UOK7nS2E9xM",
         descricao: "Árvores binárias são estruturas de dados hierárquicas onde cada nó possui no máximo dois filhos, denominados filho esquerdo e filho direito. Elas são usadas para representar relações hierárquicas e para facilitar operações eficientes de busca, inserção e exclusão de dados.",
         categoria: "Front End",
+        imagem: "https://img.youtube.com/vi/Aa8gf1pwb4E/maxresdefault.jpg",
     },
     {
         id: 3,
@@ -19,6 +21,7 @@ const listaVideos = [
         path: "https://www.youtube.com/embed/FJhMCi07T4A",
         descricao: "Chegou o episódio com a musa brasileira de UX, a Carla de Bona! Entenda a Experiência do Usuário e porque ela é importante para qualquer negócio, seja de produtos ou serviços. ",
         categoria: "Front End",
+        imagem: "https://img.youtube.com/vi/Aa8gf1pwb4E/maxresdefault.jpg",
     },
     {
         id: 4,
@@ -26,6 +29,7 @@ const listaVideos = [
         path: "https://www.youtube.com/embed/fiPfvylj6rk",
         descricao: "Afinal, quem trabalha com Back-end faz o que? Com quais outras áreas da tecnologia essa pessoa acaba se relacionando no dia a dia de trabalho e quais os possíveis caminhos nessa carreira? 🤔",
         categoria: "Back End",
+        imagem: "https://img.youtube.com/vi/Aa8gf1pwb4E/maxresdefault.jpg",
     },
     {
         id: 5,
@@ -33,6 +37,7 @@ const listaVideos = [
         path: "https://www.youtube.com/embed/6o6-bKOZOEY",
         descricao: "Nesse vídeo vamos aprender um pouco mais o que seria o GitHub CLI e quais são as suas vantagens!",
         categoria: "Back End",
+        imagem: "https://img.youtube.com/vi/Aa8gf1pwb4E/maxresdefault.jpg",
     },
     {
         id: 6,
@@ -40,6 +45,7 @@ const listaVideos = [
         path: "https://www.youtube.com/embed/Uh-GNH-t89w",
         descricao: "PHP, JavaScript, Python, Java e outras... qual é a melhor? Como surgiram essas linguagens e quais as aplicações e usos de cada uma na aprendizagem e para o mercado? Descubra nesta conversa da Roberta Arcoverde e do Paulo Silveira. ",
         categoria: "Back End",
+        imagem: "https://img.youtube.com/vi/Aa8gf1pwb4E/maxresdefault.jpg",
     },
     {
         id: 7,
@@ -47,6 +53,7 @@ const listaVideos = [
         path: "https://www.youtube.com/embed/fWscDFHKgw8",
         descricao: "Um episódio focado no desenvolvimento de aplicações Android. Neste bate-papo, Paulo Silveira e Felipe Torres conversam sobre os primeiros passos para começar a desenvolver, quais as principais ferramentas do desenvolvimento mobile, como colocar sua aplicação no ar e mais! ",
         categoria: "Mobile",
+        imagem: "https://img.youtube.com/vi/Aa8gf1pwb4E/maxresdefault.jpg",
     },
     {
         id: 8,
@@ -54,6 +61,7 @@ const listaVideos = [
         path: "https://www.youtube.com/embed/52El0EUI6D0",
         descricao: "mily Janzer, na React Native EU 2019, apresentou The New React Native, discutindo as melhorias e atualizações recentes no framework, focando em desempenho, novas APIs e a arquitetura renovada que torna o desenvolvimento de aplicativos móveis mais eficiente e robusto.",
         categoria: "Mobile",
+        imagem: "https://img.youtube.com/vi/Aa8gf1pwb4E/maxresdefault.jpg",
     },
     {
         id: 9,
@@ -61,6 +69,7 @@ const listaVideos = [
         path: "https://www.youtube.com/embed/xSC8j3gl7xM",
         descricao: "Chegou a hora de criarmos nosso primeiro aplicativo com o Flutter e entender como fazer tudo funcionar! ",
         categoria: "Mobile",
+        imagem: "https://img.youtube.com/vi/Aa8gf1pwb4E/maxresdefault.jpg",
     }
 ];
 

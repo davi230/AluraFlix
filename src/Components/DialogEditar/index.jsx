@@ -1,10 +1,14 @@
 import styled from "styled-components";
+import icon from "./delete-white.png"
+import useVideos from '../../Hooks/useVideos';
 
 const DialogEstilizado = styled.dialog`
     background-color: #03122f;
     border: 5px solid var(--azulClaro);
     max-width: 600px;
+    max-height: 60%;
     padding: 80px;
+    position: relative;
 `
 
 const TituloEstilizado = styled.h1`
@@ -103,6 +107,17 @@ const ContainerBotoes = styled.div`
 
 `
 
+const Sair = styled.button`
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    img{
+        width: 25px;
+    }
+`
 
 const CampoDialog = ({ mPlaceholder, mLabel, campo }) => {
     return (
@@ -119,7 +134,7 @@ const SelectDialog = ({ mLabel, campo }) => {
         <>
             <LabelEstilizada htmlFor={campo}>{mLabel}</LabelEstilizada>
             <SelectEstilizado id={campo} name={campo}>
-                <OptEstilizado value="none" selected disabled defaultValue>Selecione uma categoria</OptEstilizado>
+                <OptEstilizado value="none" disabled defaultValue>Selecione uma categoria</OptEstilizado>
                 <OptEstilizado value="Front-End">Front-End</OptEstilizado>
                 <OptEstilizado value="Back-End">Back-End</OptEstilizado>
                 <OptEstilizado value="Mobile">Mobile</OptEstilizado>
@@ -143,10 +158,28 @@ const TextAreaDialog = ({ mPlaceholder, mLabel, campo }) => {
 
 
 const DialogEditar = ({ dialogRef }) => {
+    const { adicionarVideo } = useVideos();
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const novoVideo = {
+            id: Date.now(),
+            titulo: event.target.titulo.value,
+            path: event.target.path.value,
+            descricao: event.target.descricao.value,
+            categoria: event.target.categoria.value,
+        };
+        adicionarVideo(novoVideo);
+        dialogRef.current.close();
+    };
+
     return (
         <DialogEstilizado ref={dialogRef}>
+            <Sair onClick={() => dialogRef.current.close()}>
+                <img src={icon} alt="sair"/>
+            </Sair>
             <TituloEstilizado>Editar Card:</TituloEstilizado>
-            <form action="">
+            <form  onSubmit={handleSubmit}>
 
                 <CampoDialog
                     mPlaceholder={"Insira o título"}

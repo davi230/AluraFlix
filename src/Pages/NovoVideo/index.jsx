@@ -3,7 +3,7 @@ import PaginaPadrao from "../../Components/PaginaPadrao";
 import Campo from "../../Components/Campo";
 import CampoSelect from "../../Components/Campo/CampoSelect";
 import CampoText from "../../Components/Campo/CampoText";
-import { useRef } from "react";
+import useVideos from '../../Hooks/useVideos'
 
 const CabecalhoForm = styled.div`
     text-align: center;
@@ -62,6 +62,21 @@ const BotoesEstilizados = styled.div`
 
 
 const NovoVideo = () => {
+    const { adicionarVideo } = useVideos();
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const novoVideo = {
+            id: Date.now(),
+            titulo: event.target.titulo.value,
+            path: event.target.path.value,
+            imagem: event.target.imagem.value,
+            descricao: event.target.descricao.value,
+            categoria: event.target.categoria.value,
+        };
+        adicionarVideo(novoVideo);
+    };
+    
 
     return (
         <PaginaPadrao>
@@ -69,7 +84,7 @@ const NovoVideo = () => {
                 <h1>Novo Vídeo</h1>
                 <p>Complete o Formulário para criar um Novo Card de Vídeo</p>
             </CabecalhoForm>
-            <FormEstilizado>
+            <FormEstilizado onSubmit={handleSubmit}>
                 <hr/>
                 <h2>Criar Card</h2>
                 <hr/>
@@ -93,7 +108,7 @@ const NovoVideo = () => {
                     <Campo 
                             mPlaceholder={"Digite o link do vídeo"}
                             mLabel={"Vídeo"}
-                            campo={"video"}
+                            campo={"path"}
                         />
                 </div>
                 <CampoText 
